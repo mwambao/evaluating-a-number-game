@@ -1,0 +1,38 @@
+<!--
+Ask the user to enter a number and check whether it's greater than, equal to, or less
+than a dynamic number value in your code. Output the result to the user.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluating a number game</title>
+</head>
+<body>
+    <script type="text/javascript">
+        myNum = prompt("Enter a number");
+        myNum = Number(myNum);
+
+        //my dynamic number 
+        myrandom = Math.random() * 10; //the random number will be between 0 and 10
+        myrandom = Math.floor(myrandom); //takes away the decimal point from random number
+        console.log(myrandom); 
+
+        if (myNum > myrandom) {
+            console.log(myNum + " is greater than " + myrandom);
+
+        } else if (myNum === myrandom) {
+            console.log(myNum + " is equal to " + myrandom);
+
+        } else if (myNum < myrandom) {
+            console.log(myNum + " is less than " + myrandom);   
+                  
+        } else {
+            console.log("Only numbers are allowed!!!");
+        }
+
+    </script>
+</body>
+</html>
